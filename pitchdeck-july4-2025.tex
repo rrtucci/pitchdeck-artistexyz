@@ -4,6 +4,11 @@
 
 \input{my_beamer.sty}
 \usepackage{wrapfig}
+\newcommand{\BSframe}[1]{\begin{frame}
+{#1}\section{#1}}
+\newcommand{\BSSframe}[1]{\begin{frame}
+{#1}\subsection{#1}}
+
 
 %\definecolor{myred}{RGB}{153, 18, 2}
 %\setbeamercolor{structure}{fg=myred}
@@ -13,24 +18,55 @@
 \titlegraphic{
 \includegraphics[width=3cm]{ar-tiste-logo.png}
 }
-
+\author{\href{www.ar-tiste.xyz}{www.ar-tiste.xyz}}
 
 \begin{document}
 
 \begin{frame}
 \maketitle
 
-\end{frame}\begin{frame}{Introduction}
+\end{frame}
 
-We have written open source software called Mappa Mundi that seamlessly combines 2 giant topics in Artificial Intelligence (AI):
-\begin{itemize}
-    \item Large Language Models (LLM) such as ChatGPT, GPT-4, Bard, etc
-    \item Causal Inference (the gold standard theory for distinguishing between correlation and causation. Invented by Judea Pearl)
-\end{itemize}
+\begin{frame}[allowframebreaks]{Contents}
+\tableofcontents
+\end{frame}
 
-\url{www.ar-tiste.xyz}
 
-\end{frame}\begin{frame}{What problems does Mappa Mundi solve?}
+
+
+\BSframe{Past: Distinguishing between correlation and causation}
+
+\begin{wrapfigure}{l}{0.8\textwidth}
+   \centering
+    \includegraphics[width=0.8\textwidth]
+    {democritus-acropolis-caryatids.jpg}
+
+\end{wrapfigure}
+
+
+Distinguishing between correlation and causation is necessary in all the sciences.
+It is the goal of science and of the scientific method.
+
+
+\end{frame}
+
+
+\BSframe{Present: Clayton Christensen on Causality}
+
+$$
+\includegraphics[width=.9\textwidth]{clayton-christensen-causality.jpeg}
+$$
+
+\end{frame}
+
+\BSframe{Future: Spock-GPT}
+
+$$\includegraphics[width=.9\textwidth]{spock-gpt.jpg}$$
+
+\end{frame}
+
+
+\BSframe{What problems does ar-tiste.xyz solve?}
 
 \begin{itemize}
     \item Healthcare and Biotech: finding causal pathways for diseases
@@ -40,28 +76,13 @@ We have written open source software called Mappa Mundi that seamlessly combines
     \item \ldots
 \end{itemize}
 
-\end{frame}\begin{frame}{Finding Causal Pathways for diseases}
+\end{frame}
 
-\begin{wrapfigure}{l}{0.8\textwidth}
-   \centering
-    \includegraphics[width=0.8\textwidth]
-    {fitbit-artiste.png}
-
-\end{wrapfigure}
-
-
-How Google can crush its LLM competitors OpenAI and Meta by Bard-ifying its FitBit product line.
-
-\end{frame}\begin{frame}{Mappa Mundi Project}
-
-$$\includegraphics[width=.95\textwidth]{mappa-mundi-4-pillars.jpg
-}$$
-
-\end{frame}\begin{frame}{Startups applying causal AI to healthcare/biotech}
+\BSframe{Startups applying causal AI to healthcare/biotech}
 
 %\begin{itemize}
 %    \item \url{www.ar-tiste.xyz} (us)
-%    \item Aitia (formerly GNS Healthcare) \\
+%    \item Aitia (formerly GNS Healthcare) \
 %    Check out this Aitia press release on finding causal pathways for Alzheimer’s Disease. Mappa Mundi can do this better.
 %    \item Causaly
 %    \item Causality Biomodels
@@ -81,37 +102,65 @@ $$\includegraphics[width=.95\textwidth]{mappa-mundi-4-pillars.jpg
 %\end{itemize}
 
 \end{frame}
-\begin{frame}{Distinguishing between correlation and causation}
+
+\BSframe{Mappa Mundi}
+
+We have written open source software called Mappa Mundi that seamlessly combines 2 giant topics in Artificial Intelligence (AI):
+\begin{itemize}
+    \item Large Language Models (LLM) such as ChatGPT, GPT-4, Bard, etc
+    \item Causal Inference (the gold standard theory for distinguishing between correlation and causation. Invented by Judea Pearl)
+\end{itemize}
+
+\url{www.ar-tiste.xyz}
+\end{frame}
+
+\BSSframe{MM: LLM add-ons}
+
+
+LLMs are currently used merely as exquisite curve fitters. To attain human level intelligence, one needs more than just curve fitters. One also needs to add to LLMs, at the very least, 3 things:
+
+\begin{enumerate}
+\item a method for discovering causal world models (i.e. DAGs) from data
+\item a directory (i.e., atlas) of DAGs. A DAG atlas is necessary so as to remember past DAGs for future reuse.
+\item an explicit engine (like our software SCuMpy) for performing Pearl's 3 rungs of causal inference and the closely related scientific method
+\end{enumerate}
+
+Our software Mappa Mundi accomplishes 1, 2, 3.
+
+
+\end{frame}
+\BSSframe{MM: 4 apps}
+	\href{https://github.com/rrtucci/scumpy}{SCuMpy},
+    \href{https://github.com/rrtucci/mappa_mundi}{Mappa Mundi},
+    \href{https://github.com/rrtucci/SentenceAx}{SentenceAx},
+    \href{https://github.com/rrtucci/CausalFitbit}{CausalFitbit}
+
+$$\includegraphics[width=.9\textwidth]{mappa-mundi-4-pillars.jpg
+}$$
+
+
+\end{frame}
+
+\BSSframe{MM: Finding Causal Pathways for diseases}
 
 \begin{wrapfigure}{l}{0.8\textwidth}
    \centering
     \includegraphics[width=0.8\textwidth]
-    {democritus-acropolis-caryatids.jpg}
+    {fitbit-artiste.png}
 
 \end{wrapfigure}
 
 
-Distinguishing between correlation and causation is necessary in all the sciences.
-It is the goal of science and of the scientific method.
-
-
-\end{frame}
-
-\begin{frame}{Clayton Christensen on Causality}
-
-$$
-\includegraphics[width=.9\textwidth]{clayton-christensen-causality.jpeg}
-$$
+How Google can crush its LLM competitors OpenAI and Meta by Bard-ifying its FitBit product line.
 
 \end{frame}
 
 
 
-\begin{frame}{Mappa Mundi is a realization of this dream}
 
-$$\includegraphics[width=.9\textwidth]{spock-gpt.jpg}$$
 
-\end{frame}\begin{frame}{Mappa Mundi Software}
+
+\BSSframe{MM: features}
 
 \begin{itemize}
 \item Mappa Mundi (MM) is free open source software that extracts causal networks (DAGs) from text.
@@ -127,78 +176,18 @@ $$\includegraphics[width=.9\textwidth]{spock-gpt.jpg}$$
 \item MM can’t be hacked by prompt injection because it doesn’t use prompts.
 \end{itemize}
 
-\end{frame}\begin{frame}{LLM add-ons}
+\end{frame}
 
+\BSframe{Causal Genomics}
+\end{frame}
 
-LLMs are currently used merely as exquisite curve fitters. To attain human level intelligence, one needs more than just curve fitters. One also needs to add to LLMs, at the very least, 3 things:
+\BSframe{Flood and Drought Anticipatory Action}
+\end{frame}
 
-\begin{enumerate}
-\item a method for discovering causal world models (i.e. DAGs) from data
-\item a directory (i.e., atlas) of DAGs. A DAG atlas is necessary so as to remember past DAGs for future reuse.
-\item an explicit engine (like our software SCuMpy) for performing Pearl's 3 rungs of causal inference and the closely related scientific method
-\end{enumerate}
-
-Our software Mappa Mundi accomplishes 1, 2, 3.
-
-
-\end{frame}\begin{frame}{References}
-
-\begin{itemize}
-    \item \url{www.ar-tiste.xyz}
-    \item \url{https://github.com/rrtucci/mappa_mundi}
-    \item \url{https://github.com/rrtucci/mappa_mundi/tree/master/jupyter_notebooks}
-    \item \url{https://github.com/rrtucci/mappa_mundi/blob/master/white_paper/mappa_mundi.pdf}
-    \item \url{https://github.com/rrtucci/scumpy}
-    \item \url{https://github.com/rrtucci/SentenceAx}
-\end{itemize}
+\BSframe{Book: Bayesuvius}
 \end{frame}
 
 
 \end{document}
 
-\begin{frame}{Excerpt from the last will and testament of Yahya Ibrahim Hassan Sinwar.}
 
-{\tiny
-
-This isn’t posted for the Palestinian audience.
-
-They know this.
-
-This is posted for 
-@POTUS
-, 
-@SecRubio
-, 
-@SecDef
-, and all other US government officials who think you can negotiate Hamas away, or bomb them into submission.
-
-You can’t.
-
-You won’t.
-
-“This is my will: do not lay down your weapons; do not throw away stones; do not forget your martyrs; and do not compromise on a dream that is rightfully yours.
-
-We are here to stay in our land, in our hearts and in the future of our children.
-
-I entrust you with Palestine, the land I loved until death and the dream I carried on my shoulders like a mountain that never bends.
-
-If I fall, do not fall with me, but carry the banner that never falls, and make my blood a bridge for a generation that rises from our ashes stronger.
-
-Do not forget that the homeland is not just a story to be told but a reality to be lived, and with every martyr born from this land a thousand more resistance fighters are born.
-
-If the flood returns and I am not among you, know that I was the first drop in the waves of freedom, and I lived to see you continue the journey.
-
-Be a thorn in their throat, a flood that knows no retreat, and do not rest until the world acknowledges that we are the rightful owners and that we are not just numbers in the news.”
-
-Hamas is Gaza.
-
-Gaza is Palestine.
-
-And Palestine is forever.
-
-Free Palestine.
-
-All of it.
-
-From the River, to the Sea.}
-\end{frame}
