@@ -8,6 +8,7 @@
 {#1}\section{#1}}
 \newcommand{\BSSframe}[1]{\begin{frame}
 {#1}\subsection{#1}}
+\usepackage{href-ul}
 
 
 %\definecolor{myred}{RGB}{153, 18, 2}
@@ -36,16 +37,16 @@
 
 \BSframe{Past: Distinguishing between correlation and causation}
 
-\begin{wrapfigure}{l}{0.8\textwidth}
-   \centering
-    \includegraphics[width=0.8\textwidth]
+\begin{columns}
+
+\column{.75\textwidth}
+    \includegraphics[width=1\textwidth]
     {democritus-acropolis-caryatids.jpg}
 
-\end{wrapfigure}
-
-
+\column{.2\textwidth}
 Distinguishing between correlation and causation is necessary in all the sciences.
 It is the goal of science and of the scientific method.
+\end{columns}
 
 
 \end{frame}
@@ -68,9 +69,14 @@ $$\includegraphics[width=.9\textwidth]{spock-gpt.jpg}$$
 
 \BSframe{What problems does ar-tiste.xyz solve?}
 
+We specialize in Bayesian Networks, Causal Inference and Causal AI
+
 \begin{itemize}
+\item AI: adding to LLM the capability to do Causal Inference
     \item Healthcare and Biotech: finding causal pathways for diseases
-    \item Business Management, A/B test and beyond
+    from symptoms or from genome (Causal Genomics)
+    \item Commerce: A/B testing, Uplift Marketing, finding causes of sales
+    \item Weather (Flood and Drought Anticipatory Action)
     \item Longevity research
     \item Dieting
     \item \ldots
@@ -107,11 +113,10 @@ $$\includegraphics[width=.9\textwidth]{spock-gpt.jpg}$$
 
 We have written open source software called Mappa Mundi that seamlessly combines 2 giant topics in Artificial Intelligence (AI):
 \begin{itemize}
-    \item Large Language Models (LLM) such as ChatGPT, GPT-4, Bard, etc
+    \item Large Language Models (LLM) such as ChatGPT, Grok, etc
     \item Causal Inference (the gold standard theory for distinguishing between correlation and causation. Invented by Judea Pearl)
 \end{itemize}
 
-\url{www.ar-tiste.xyz}
 \end{frame}
 
 \BSSframe{MM: LLM add-ons}
@@ -143,15 +148,14 @@ $$\includegraphics[width=.9\textwidth]{mappa-mundi-4-pillars.jpg
 
 \BSSframe{MM: Finding Causal Pathways for diseases}
 
-\begin{wrapfigure}{l}{0.8\textwidth}
-   \centering
-    \includegraphics[width=0.8\textwidth]
+\begin{columns}
+\column{.75\textwidth}
+    \includegraphics[width=1\textwidth]
     {fitbit-artiste.png}
 
-\end{wrapfigure}
-
-
+\column{.25 \textwidth}
 How Google can crush its LLM competitors OpenAI and Meta by Bard-ifying its FitBit product line.
+\end{columns}
 
 \end{frame}
 
@@ -179,12 +183,31 @@ How Google can crush its LLM competitors OpenAI and Meta by Bard-ifying its FitB
 \end{frame}
 
 \BSframe{Causal Genomics}
+$$
+\includegraphics[width=.6\textwidth]{gene-map.png}$$
+\href{https://github.com/rrtucci/gene_causal_mapper}{Gene\_Causal\_Mapper} is a python program for discovering a causal Dag for genes via the Mappa Mundi (MM) algorithm.
+
+The software applies the MM algorithm to finding what are called Gene Regulatory Networks (GRN), Autoregulon Nets and Network Motifs in the Genomics and Systems Biology literature.
+
+As an example, we apply it to the DREAM3 dataset for yeast.
+
+See also our \href{https://www.reddit.com/r/bioinformatics_causal/comments/1kbyf4s/mappa_mundi_causal_genomics_challenge/}{Causal Genomics Challenge}
+
 \end{frame}
 
 \BSframe{Flood and Drought Anticipatory Action}
+
+We are/were consultants for a project under the auspices of \href{https://www.icpac.net/}{ICPAC} (IGAD Climate Prediction and Applications Center) Delivering climate services to Eastern Africa
 \end{frame}
 
 \BSframe{Book: Bayesuvius}
+\begin{columns}
+\column{.6\textwidth}
+\includegraphics[width=.7\textwidth]{bayesuvius.png}
+\column{.3\textwidth}
+Our free, open source book (1,000 pages). Available in pdf form 
+\href{https://qbnets.wordpress.com/2020/11/30/my-free-book-bayesuvius-on-bayesian-networks/}{here}.
+\end{columns}
 \end{frame}
 
 
